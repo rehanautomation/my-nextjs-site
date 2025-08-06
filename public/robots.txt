@@ -1,3 +1,97 @@
 User-agent: *
 Allow: /
-Sitemap: https://aztechacquisition.com/sitemap.xml 
+
+# Sitemap
+Sitemap: https://aztecacquisition.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin and technical areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /test/
+
+# Allow important pages and sections
+Allow: /
+Allow: /services/
+Allow: /about/
+Allow: /contact/
+Allow: /resources/
+Allow: /case-studies/
+Allow: /blog/
+Allow: /privacy-policy/
+Allow: /terms-of-service/
+
+# Specific service pages
+Allow: /services/social-media-automation/
+Allow: /services/lead-nurture-automation/
+Allow: /services/website-chatbot/
+
+# Block common unwanted paths
+Disallow: /search?
+Disallow: /?q=
+Disallow: /?s=
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+
+# Block file types that shouldn't be indexed
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.ppt$
+Disallow: /*.pptx$
+
+# Allow important file types
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+
+# Block common spam and security issues
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /error/
+Disallow: /404/
+Disallow: /500/
+
+# Social media crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Search engine specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1 
