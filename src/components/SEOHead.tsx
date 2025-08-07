@@ -13,20 +13,20 @@ interface SEOHeadProps {
 }
 
 export function SEOHead({
-  title = "AztecAcquisition - Automate Your Clinic's Growth | Patient Conversion System",
-  description = "Get 20-50 extra consultations every month with AztecAcquisition's fully automated patient conversion system. Increase bookings, reduce no-shows, and grow your clinic with AI-powered automation.",
+  title = "AztechAcquisition - Automate Your Clinic's Growth | Patient Conversion System",
+  description = "Get 20-50 extra consultations every month with AztechAcquisition's fully automated patient conversion system. Increase bookings, reduce no-shows, and grow your clinic with AI-powered automation.",
   keywords = [
     "patient conversion system",
     "clinic automation", 
     "medical practice growth",
     "healthcare marketing"
   ],
-  canonical = "https://aztecacquisition.com",
+  canonical = "https://aztechacquisition.com",
   ogImage = "/hero-medical.png",
   ogType = "website",
   structuredData
 }: SEOHeadProps) {
-  const fullTitle = title.includes('AztecAcquisition') ? title : `${title} | AztecAcquisition`;
+  const fullTitle = title.includes('AztechAcquisition') ? title : `${title} | AztechAcquisition`;
   
   return (
     <Head>
@@ -41,22 +41,22 @@ export function SEOHead({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonical} />
-      <meta property="og:image" content={`https://aztecacquisition.com${ogImage}`} />
-      <meta property="og:site_name" content="AztecAcquisition" />
+              <meta property="og:image" content={`https://aztechacquisition.com${ogImage}`} />
+        <meta property="og:site_name" content="AztechAcquisition" />
       <meta property="og:locale" content="en_US" />
       
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`https://aztecacquisition.com${ogImage}`} />
-      <meta name="twitter:site" content="@aztecacquisition" />
-      <meta name="twitter:creator" content="@aztecacquisition" />
+              <meta name="twitter:image" content={`https://aztechacquisition.com${ogImage}`} />
+        <meta name="twitter:site" content="@aztechacquisition" />
+        <meta name="twitter:creator" content="@aztechacquisition" />
       
       {/* Additional SEO Meta Tags */}
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-      <meta name="author" content="AztecAcquisition" />
-      <meta name="publisher" content="AztecAcquisition" />
+              <meta name="author" content="AztechAcquisition" />
+        <meta name="publisher" content="AztechAcquisition" />
       <meta name="language" content="en" />
       <meta name="revisit-after" content="7 days" />
       <meta name="distribution" content="global" />
@@ -68,7 +68,7 @@ export function SEOHead({
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="AztecAcquisition" />
+              <meta name="apple-mobile-web-app-title" content="AztechAcquisition" />
       
       {/* Performance Optimizations */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -93,9 +93,9 @@ export function SEOHead({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
-            "name": "AztecAcquisition",
+            "name": "AztechAcquisition",
             "description": "Healthcare automation and patient conversion system",
-            "url": "https://aztecacquisition.com",
+            "url": "https://aztechacquisition.com",
             "telephone": "+1-555-123-4567",
             "address": {
               "@type": "PostalAddress",
@@ -121,8 +121,8 @@ export function SEOHead({
               "closes": "17:00"
             },
             "sameAs": [
-              "https://linkedin.com/company/aztecacquisition",
-              "https://twitter.com/aztecacquisition"
+              "https://linkedin.com/company/aztechacquisition",
+              "https://twitter.com/aztechacquisition"
             ]
           })
         }}

@@ -52,7 +52,7 @@ Your website has been fully optimized for search engines and user experience. He
 ```json
 {
   "@type": "Organization",
-  "name": "AztecAcquisition",
+        "name": "AztechAcquisition",
   "service": [
     {
       "@type": "Service",
@@ -64,8 +64,8 @@ Your website has been fully optimized for search engines and user experience. He
 
 ### **Meta Tags Example**
 ```html
-<title>AztecAcquisition - Automate Your Clinic's Growth | Patient Conversion System</title>
-<meta name="description" content="Get 20-50 extra consultations every month with AztecAcquisition's fully automated patient conversion system. Increase bookings, reduce no-shows, and grow your clinic with AI-powered automation.">
+<title>AztechAcquisition - Automate Your Clinic's Growth | Patient Conversion System</title>
+<meta name="description" content="Get 20-50 extra consultations every month with AztechAcquisition's fully automated patient conversion system. Increase bookings, reduce no-shows, and grow your clinic with AI-powered automation.">
 <meta name="keywords" content="patient conversion system, clinic automation, medical practice growth">
 ```
 

@@ -1,7 +1,7 @@
 # Popup SEO Optimization Guide ✅
 
 ## Overview
-This document outlines the SEO-friendly popup implementation for AztecAcquisition's service details, ensuring compliance with Google's guidelines while maximizing user engagement and conversion rates.
+This document outlines the SEO-friendly popup implementation for AztechAcquisition's service details, ensuring compliance with Google's guidelines while maximizing user engagement and conversion rates.
 
 ## SEO-Friendly Popup Features Implemented
 
@@ -63,7 +63,7 @@ aria-describedby="service-popup-description"
   "description": "Service description",
   "provider": {
     "@type": "Organization",
-    "name": "AztecAcquisition"
+          "name": "AztechAcquisition"
   }
 }
 ```

@@ -1,6 +1,6 @@
 {
-  "name": "AztecAcquisition - Patient Conversion System",
-  "short_name": "AztecAcquisition",
+  "name": "AztechAcquisition - Patient Conversion System",
+  "short_name": "AztechAcquisition",
   "description": "Automate your clinic's growth with AI-powered patient conversion system",
   "start_url": "/",
   "display": "standalone",

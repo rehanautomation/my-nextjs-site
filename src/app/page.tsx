@@ -23,6 +23,7 @@ import SectionBlob from "@/components/SectionBlob";
 import { AnimatePresence } from "framer-motion";
 import { ServicePopup } from "@/components/ServicePopup";
 import { useAnalytics } from "@/hooks/useAnalytics";
+import FAQSection from "@/components/FAQSection";
 
 const services = [
   {
@@ -200,7 +201,7 @@ const testimonials = [
     name: "Dr. Alex Lee",
     role: "Cosmetic Dentist",
             image: "/avatar2.webp",
-    text: "AztecAcquisition is a game changer for our clinic's growth.",
+    text: "AztechAcquisition is a game changer for our clinic's growth.",
   },
   {
     name: "Dr. Maria Gomez",
@@ -236,6 +237,7 @@ export default function Home() {
     { id: "home", label: "Home" },
     { id: "features", label: "Features" },
     { id: "testimonials", label: "Testimonials" },
+    { id: "faq", label: "FAQ" },
     { id: "book-demo", label: "Contact" },
   ], []);
 
@@ -409,10 +411,10 @@ export default function Home() {
         aria-label="Main navigation"
       >
         {/* Left: Logo */}
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0" aria-label="AztecAcquisition Home">
+        <Link href="/" className="flex items-center gap-2 flex-shrink-0" aria-label="AztechAcquisition Home">
           <Image 
             src="/logo.svg" 
-            alt="AztecAcquisition Logo" 
+            alt="AztechAcquisition Logo" 
             width={48} 
             height={48} 
             className="rounded-full sm:w-16 sm:h-16"
@@ -494,7 +496,7 @@ export default function Home() {
               <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center mb-8">
                   <Link href="/">
-                    <Image src="/logo.svg" alt="AztecAcquisition Logo" width={48} height={48} className="rounded-full" />
+                    <Image src="/logo.svg" alt="AztechAcquisition Logo" width={48} height={48} className="rounded-full" />
                   </Link>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -581,9 +583,9 @@ export default function Home() {
           </svg>
         </div>
         
-        <div className="w-full max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center">
-          {/* Text content - now full width on mobile */}
-          <div className="flex flex-col items-start justify-center px-2 sm:px-4 lg:pl-12 lg:pr-4 py-2 order-2 lg:order-1">
+        <div className="w-full max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Text content - now with better spacing and positioning */}
+          <div className="flex flex-col items-start justify-center px-2 sm:px-4 lg:pl-12 lg:pr-8 py-2 order-2 lg:order-1 relative z-20">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -607,33 +609,43 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.7 }}
               className="relative z-10 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 text-text text-left"
             >
-              Get 20–50 extra consultations every month with AztecAcquisition, fully automated 24/7.
+              Get 20–50 extra consultations every month with AztechAcquisition, fully automated 24/7.
             </motion.p>
-            <MotionButton
-              asChild
-              size="lg"
-              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-transform duration-200 w-full sm:w-auto"
-              whileHover={{ scale: 1.07, boxShadow: "0 4px 24px 0 rgba(31,38,135,0.12)" }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => analytics.trackCTAClick('book_demo', 'hero')}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ delay: 0.4, duration: 0.7 }}
+              className="relative z-20 w-full sm:w-auto"
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                <FaCheckCircle className="inline mr-2 mb-1" size={20} /> Book Your Free Demo
-              </a>
-            </MotionButton>
+              <MotionButton
+                asChild
+                size="lg"
+                className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-transform duration-200 w-full sm:w-auto relative z-20"
+                whileHover={{ scale: 1.07, boxShadow: "0 4px 24px 0 rgba(31,38,135,0.12)" }}
+                whileTap={{ scale: 0.97 }}
+                onClick={() => analytics.trackCTAClick('book_demo', 'hero')}
+              >
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  <FaCheckCircle className="inline mr-2 mb-1" size={20} /> Book Your Free Demo
+                </a>
+              </MotionButton>
+            </motion.div>
           </div>
           
-          {/* Hero Image - now responsive */}
-          <div className="flex items-center justify-center h-full w-full order-1 lg:order-2 mb-6 lg:mb-0">
-            <Image
-              src="/hero-medical.png"
-              alt="Medical professionals using AztecAcquisition's automated patient conversion system"
-              width={1550}
-              height={1550}
-              className="object-contain drop-shadow-2xl w-full max-w-md sm:max-w-lg lg:max-w-none"
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+          {/* Hero Image - adjusted positioning and sizing */}
+          <div className="flex items-center justify-center h-full w-full order-1 lg:order-2 mb-6 lg:mb-0 relative z-10">
+            <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl">
+              <Image
+                src="/hero-medical.png"
+                alt="Medical professionals using AztechAcquisition's automated patient conversion system"
+                width={1550}
+                height={1550}
+                className="object-contain drop-shadow-2xl w-full h-auto"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -651,7 +663,7 @@ export default function Home() {
                 id="lead-magnet-heading"
                 className="text-lg sm:text-xl md:text-2xl"
               >
-                Get Your Free Appointment-Booking Chatbot Today from AztecAcquisition
+                Get Your Free Appointment-Booking Chatbot Today from AztechAcquisition
               </CardTitle>
             </div>
           </CardHeader>
@@ -711,7 +723,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="text-base sm:text-lg text-center mb-8 sm:mb-12 max-w-2xl mx-auto"
           >
-            We deliver booked consultations and loyal returning patients with AztecAcquisition&apos;s fully automated system.
+            We deliver booked consultations and loyal returning patients with AztechAcquisition&apos;s fully automated system.
           </motion.p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8" role="list" aria-label="Services">
             {services.map((service) => (
@@ -835,6 +847,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQSection analytics={analytics} />
+
       {/* Mobile-Optimized Guarantee Section */}
       <section 
         className="relative w-full py-12 sm:py-16 px-4 sm:px-6 bg-primary/10 overflow-hidden"
@@ -929,7 +944,7 @@ export default function Home() {
 
       {/* Mobile-Optimized Footer */}
       <footer className="py-6 sm:py-8 px-4 sm:px-6 text-center text-sm text-text bg-background border-t border-gray-200" role="contentinfo">
-        <p>&copy; {new Date().getFullYear()} AztecAcquisition. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} AztechAcquisition. All rights reserved.</p>
       </footer>
 
       {/* Service Popup */}

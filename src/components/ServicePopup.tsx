@@ -49,8 +49,8 @@ export function ServicePopup({ isOpen, onClose, service }: ServicePopupProps) {
         "description": service.desc,
         "provider": {
           "@type": "Organization",
-          "name": "AztecAcquisition",
-          "url": "https://aztecacquisition.com"
+                  "name": "AztechAcquisition",
+        "url": "https://aztechacquisition.com"
         },
         "serviceType": "Healthcare Automation",
         "areaServed": "US",
@@ -250,7 +250,7 @@ export function ServicePopup({ isOpen, onClose, service }: ServicePopupProps) {
 
                 {/* SEO-Friendly Additional Info */}
                 <div className="bg-blue-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-900 mb-2">Why Choose AztecAcquisition?</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">Why Choose AztechAcquisition?</h4>
                   <ul className="space-y-1 text-sm text-gray-700">
                     <li>• <strong>Non-intrusive popups</strong> that comply with Google&apos;s SEO guidelines</li>
                     <li>• <strong>Mobile-first design</strong> for optimal user experience</li>

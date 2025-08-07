@@ -47,6 +47,10 @@ export function useAnalytics() {
     trackEvent('navigation_click', { section });
   };
 
+  const trackFAQView = (question: string) => {
+    trackEvent('faq_view', { question });
+  };
+
   return {
     trackEvent,
     trackPageView,
@@ -58,5 +62,6 @@ export function useAnalytics() {
     trackTestimonialView,
     trackMobileMenuToggle,
     trackNavigationClick,
+    trackFAQView,
   };
 } 
