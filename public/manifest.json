@@ -1,7 +1,7 @@
 {
-  "name": "AztechAcquisition - Patient Conversion System",
+  "name": "AztechAcquisition - Customer Conversion System",
   "short_name": "AztechAcquisition",
-  "description": "Automate your clinic's growth with AI-powered patient conversion system",
+  "description": "Free appointment-booking chatbot setup (no credit card required). Automate your business growth with an AI-powered customer conversion system.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -25,7 +25,7 @@
       "type": "image/svg+xml"
     }
   ],
-  "categories": ["business", "productivity", "medical"],
+  "categories": ["business", "productivity", "marketing"],
   "lang": "en",
   "dir": "ltr"
 } 

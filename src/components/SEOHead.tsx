@@ -13,13 +13,17 @@ interface SEOHeadProps {
 }
 
 export function SEOHead({
-  title = "AztechAcquisition - Automate Your Clinic's Growth | Patient Conversion System",
-  description = "Get 20-50 extra consultations every month with AztechAcquisition's fully automated patient conversion system. Increase bookings, reduce no-shows, and grow your clinic with AI-powered automation.",
+  title = "AztechAcquisition - Free Appointment-Booking Chatbot Setup | Customer Conversion System",
+  description = "Claim a free appointment-booking chatbot setup (no credit card required). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system.",
   keywords = [
-    "patient conversion system",
-    "clinic automation", 
-    "medical practice growth",
-    "healthcare marketing"
+    "customer conversion system",
+    "business automation", 
+    "lead generation automation",
+    "marketing automation",
+    "free chatbot setup",
+    "appointment booking chatbot",
+    "website chatbot",
+    "ai chatbot for business"
   ],
   canonical = "https://aztechacquisition.com",
   ogImage = "/hero-medical.png",
@@ -42,6 +46,7 @@ export function SEOHead({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonical} />
               <meta property="og:image" content={`https://aztechacquisition.com${ogImage}`} />
+      <meta property="og:image:alt" content="AztechAcquisition free appointment-booking chatbot demo" />
         <meta property="og:site_name" content="AztechAcquisition" />
       <meta property="og:locale" content="en_US" />
       
@@ -50,6 +55,7 @@ export function SEOHead({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
               <meta name="twitter:image" content={`https://aztechacquisition.com${ogImage}`} />
+      <meta name="twitter:image:alt" content="AztechAcquisition free appointment-booking chatbot demo" />
         <meta name="twitter:site" content="@aztechacquisition" />
         <meta name="twitter:creator" content="@aztechacquisition" />
       
@@ -86,40 +92,16 @@ export function SEOHead({
         />
       )}
       
-      {/* Additional Structured Data for Healthcare */}
+      {/* Organization Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "MedicalBusiness",
+            "@type": "Organization",
             "name": "AztechAcquisition",
-            "description": "Healthcare automation and patient conversion system",
+            "description": "Business automation and customer conversion system offering free appointment-booking chatbot setup",
             "url": "https://aztechacquisition.com",
-            "telephone": "+1-555-123-4567",
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "US",
-              "addressLocality": "New York",
-              "addressRegion": "NY"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "40.7128",
-              "longitude": "-74.0060"
-            },
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday", 
-                "Thursday",
-                "Friday"
-              ],
-              "opens": "09:00",
-              "closes": "17:00"
-            },
             "sameAs": [
               "https://linkedin.com/company/aztechacquisition",
               "https://twitter.com/aztechacquisition"

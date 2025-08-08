@@ -22,23 +22,23 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Why is the assistant called 'Justin'?",
-    answer: "It's a play on 'just-in-time': Justin delivers the right plan, insight, exactly when you need it, with a natural-sounding voice that feels more human than a bot. The name reflects our commitment to providing timely, relevant assistance to your patients."
+    answer: "It's a play on 'just-in-time': Justin delivers the right plan and insight exactly when you need it, with a natural-sounding voice that feels more human than a bot. The name reflects our commitment to providing timely, relevant assistance to your customers."
   },
   {
     question: "How quickly can I see results?",
-    answer: "Most clients see increased bookings within 2-4 weeks of implementation. Our system starts working immediately, and we typically see a 30-50% increase in consultation bookings within the first month. The automated follow-up sequences begin converting leads right away."
+    answer: "Most clients see increased bookings within 2-4 weeks of implementation. Our system starts working immediately, and we typically see a 30-50% increase in bookings within the first month. The automated follow-up sequences begin converting leads right away."
   },
   {
-    question: "What if I don't get the guaranteed 20-50 consultations?",
-    answer: "We guarantee at least 20-50 new consultations per month, or we work for free until you get them. This includes optimizing your campaigns, adjusting strategies, and providing additional support at no extra cost until we meet your targets."
+    question: "What if I don't get the guaranteed results?",
+    answer: "We guarantee at least 20-50 additional qualified leads per month, or we work for free until you get them. This includes optimizing your campaigns, adjusting strategies, and providing additional support at no extra cost until we meet your targets."
   },
   {
     question: "Can the system integrate with my existing software?",
-    answer: "Yes! AztechAcquisition integrates seamlessly with most popular practice management systems, CRM platforms, and booking calendars. We can connect with systems like Calendly, Acuity, Practice Fusion, and many others to ensure smooth workflow integration."
+    answer: "Yes! AztechAcquisition integrates seamlessly with most popular CRMs, calendars, and marketing tools. We can connect with systems like Calendly, HubSpot, Salesforce, Google Calendar, and many others to ensure smooth workflow integration."
   },
   {
-    question: "How does the AI handle sensitive medical information?",
-    answer: "Our AI is designed to handle patient inquiries professionally while maintaining HIPAA compliance. It never stores sensitive medical information and focuses on appointment booking and general inquiries, referring complex medical questions to your staff."
+    question: "How does the AI handle sensitive information?",
+    answer: "Our AI is designed to handle customer inquiries professionally and securely. It focuses on lead capture, qualification, and scheduling, and defers complex or sensitive matters to your team."
   },
   {
     question: "What kind of support do you provide?",
@@ -46,11 +46,11 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Can I customize the automated messages?",
-    answer: "Absolutely! You can fully customize all automated messages to match your brand voice and specific requirements. Our system learns from your preferences and can be tailored to reflect your clinic's unique communication style and protocols."
+    answer: "Absolutely! You can fully customize all automated messages to match your brand voice and specific requirements. Our system learns from your preferences and can be tailored to reflect your business's unique communication style and protocols."
   },
   {
-    question: "How does the system handle different types of patients?",
-    answer: "Our AI intelligently segments patients based on their inquiries and treatment history, allowing for personalized communication strategies. Whether it's a new patient inquiry, follow-up appointment, or specific treatment question, the system adapts its approach accordingly."
+    question: "How does the system handle different types of customers?",
+    answer: "Our AI intelligently segments customers based on their behavior and history, allowing for personalized communication strategies. Whether it's a new lead, an onboarding customer, or a reactivation campaign, the system adapts its approach accordingly."
   }
 ];
 
@@ -105,7 +105,7 @@ export default function FAQSection({ analytics }: FAQSectionProps) {
             Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg text-text max-w-2xl mx-auto">
-            Get answers to the most common questions about AztechAcquisition's automated patient conversion system.
+            Get answers to the most common questions about AztechAcquisition's automated customer conversion system.
           </p>
         </motion.div>
 
@@ -122,12 +122,14 @@ export default function FAQSection({ analytics }: FAQSectionProps) {
                 <CardHeader className="pb-0">
                   <Button
                     variant="ghost"
-                    className="w-full justify-between p-0 h-auto text-left font-semibold text-base sm:text-lg"
+                    className="w-full justify-between h-auto text-left font-semibold text-base sm:text-lg whitespace-normal break-words text-wrap items-start px-4 py-3 sm:py-4"
                     onClick={() => toggleItem(index)}
                     aria-expanded={openItems.has(index)}
                     aria-controls={`faq-content-${index}`}
                   >
-                    <span className="flex-1 text-left">{item.question}</span>
+                    <span id={`faq-question-${index}`} className="flex-1 text-left leading-snug">
+                      {item.question}
+                    </span>
                     <AnimatePresence mode="wait">
                       {openItems.has(index) ? (
                         <motion.div

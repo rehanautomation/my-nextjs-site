@@ -7,20 +7,24 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "AztechAcquisition - Automate Your Clinic's Growth | Patient Conversion System",
+    default: "AztechAcquisition - Free Appointment-Booking Chatbot Setup | Customer Conversion System",
     template: "%s | AztechAcquisition"
   },
-  description: "Get 20-50 extra consultations every month with AztechAcquisition's fully automated patient conversion system. Increase bookings, reduce no-shows, and grow your clinic with AI-powered automation.",
+  description: "Claim a free appointment-booking chatbot setup (no credit card required). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system.",
   keywords: [
-    "patient conversion system",
-    "healthcare automation",
-    "medical practice growth",
+    "customer conversion system",
+    "business automation",
+    "lead generation automation",
     "appointment booking automation",
-    "patient lead nurturing",
-    "healthcare marketing automation",
-    "medical practice management",
-    "patient retention system",
-    "healthcare lead nurturing"
+    "lead nurturing",
+    "marketing automation",
+    "sales enablement",
+    "customer retention system",
+    "growth automation",
+    "free chatbot setup",
+    "appointment booking chatbot",
+    "website chatbot",
+    "ai chatbot for business"
   ],
   authors: [{ name: "AztechAcquisition", url: "https://aztechacquisition.com" }],
   creator: "AztechAcquisition",
@@ -37,15 +41,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://aztechacquisition.com',
-    title: "AztechAcquisition - Automate Your Clinic's Growth",
-    description: "Get 20-50 extra consultations every month with our fully automated patient conversion system. Increase bookings and grow your clinic.",
+    title: "AztechAcquisition - Free Appointment-Booking Chatbot Setup",
+    description: "Claim a free appointment-booking chatbot setup and grow with 20–50 extra qualified leads per month.",
     siteName: 'AztechAcquisition',
     images: [
       {
         url: '/hero-medical.png',
         width: 1200,
         height: 630,
-        alt: 'AztechAcquisition Patient Conversion System',
+        alt: 'AztechAcquisition Free Appointment-Booking Chatbot Demo',
         type: 'image/png',
       },
       {
@@ -59,8 +63,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "AztechAcquisition - Automate Your Clinic's Growth",
-    description: "Get 20-50 extra consultations every month with our fully automated patient conversion system.",
+    title: "AztechAcquisition - Free Appointment-Booking Chatbot Setup",
+    description: "Claim a free appointment-booking chatbot setup. No credit card required.",
     images: ['/hero-medical.png'],
     creator: '@aztechacquisition',
     site: '@aztechacquisition',
@@ -103,8 +107,8 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />
-        <meta name="description" content="Get 20-50 extra consultations every month with AztechAcquisition's fully automated patient conversion system. Increase bookings, reduce no-shows, and grow your clinic with AI-powered automation." />
-        <meta name="keywords" content="patient conversion system, healthcare automation, medical practice growth, appointment booking automation, patient lead nurturing, healthcare marketing automation, medical practice management, patient retention system, healthcare lead nurturing" />
+        <meta name="description" content="Claim a free appointment-booking chatbot setup (no credit card required). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system." />
+         <meta name="keywords" content="customer conversion system, business automation, lead generation automation, appointment booking automation, lead nurturing, marketing automation, sales enablement, customer retention system, growth automation, free chatbot setup, appointment booking chatbot, website chatbot, ai chatbot for business" />
         <meta name="author" content="AztechAcquisition" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -148,7 +152,7 @@ export default function RootLayout({
               "name": "AztechAcquisition",
               "url": "https://aztechacquisition.com",
               "logo": "https://aztechacquisition.com/logo.svg",
-              "description": "Automated patient conversion system for healthcare clinics",
+            "description": "AI-powered customer conversion and business automation platform offering free appointment-booking chatbot setup",
               "foundingDate": "2024",
               "sameAs": [
                 "https://linkedin.com/company/aztechacquisition",
@@ -170,50 +174,57 @@ export default function RootLayout({
                 {
                   "@type": "Service",
                   "name": "Social Media Comment & DM Agent",
-                  "description": "Automated social media engagement and lead qualification for healthcare practices",
+                  "description": "Automated social media engagement and lead qualification for businesses",
                   "provider": {
                     "@type": "Organization",
                     "name": "AztechAcquisition"
                   },
                   "areaServed": "US",
-                  "serviceType": "Healthcare Automation"
+                  "serviceType": "Business Automation"
                 },
                 {
                   "@type": "Service", 
                   "name": "Lead Nurture Automation",
-                  "description": "Automated follow-up sequences to reduce no-shows and increase patient retention",
+                  "description": "Automated follow-up sequences to reduce drop-offs and increase customer retention",
                   "provider": {
                     "@type": "Organization",
                     "name": "AztechAcquisition"
                   },
                   "areaServed": "US",
-                  "serviceType": "Healthcare Automation"
+                  "serviceType": "Business Automation"
                 },
                 {
                   "@type": "Service",
                   "name": "Website Booking Chatbot", 
-                  "description": "24/7 intelligent chatbot for appointment booking and patient engagement",
+                  "description": "24/7 intelligent chatbot for booking, lead capture, and customer engagement. Free setup available.",
                   "provider": {
                     "@type": "Organization",
                     "name": "AztechAcquisition"
                   },
                   "areaServed": "US",
-                  "serviceType": "Healthcare Automation"
+                  "serviceType": "Business Automation",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "description": "Limited-time free appointment-booking chatbot setup"
+                  }
                 }
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Healthcare Automation Services",
+                "name": "Business Automation Services",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Patient Conversion System"
+                      "name": "Customer Conversion System"
                     },
                     "price": "0",
                     "priceCurrency": "USD",
-                    "description": "Free consultation and setup"
+                    "description": "Free demo and setup"
                   }
                 ]
               }
@@ -230,7 +241,7 @@ export default function RootLayout({
                   "@type": "WebSite",
                   "name": "AztechAcquisition",
                   "url": "https://aztechacquisition.com",
-                  "description": "Automated patient conversion system for healthcare clinics",
+                  "description": "AI-powered customer conversion and business automation platform",
                   "potentialAction": {
                     "@type": "SearchAction",
                     "target": "https://aztechacquisition.com/search?q={search_term_string}",
@@ -291,10 +302,10 @@ export default function RootLayout({
                   "mainEntity": [
                     {
                       "@type": "Question",
-                      "name": "How does AztechAcquisition's patient conversion system work?",
+                      "name": "How does AztechAcquisition's customer conversion system work?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Our system uses AI-powered automation to capture leads from social media, nurture them through personalized follow-ups, and convert them into booked consultations. It works 24/7 to ensure no lead is missed."
+                         "text": "Our system uses AI-powered automation to capture leads from social media and your website, nurture them through personalized follow-ups, and convert them into booked calls and purchases. It works 24/7 to ensure no lead is missed."
                       }
                     },
                     {
@@ -302,7 +313,7 @@ export default function RootLayout({
                       "name": "What services does AztechAcquisition provide?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "We provide social media automation, lead nurturing, post-treatment follow-ups, database reactivation, website chatbots, and 24/7 AI calling agents to help healthcare practices grow their patient base."
+                         "text": "We provide social media automation, lead nurturing, customer reactivation, website chatbots, and 24/7 AI calling agents to help businesses grow their revenue."
                       }
                     }
                   ]
@@ -317,8 +328,8 @@ export default function RootLayout({
                 __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "Product",
-                  "name": "AztechAcquisition Patient Conversion System",
-                  "description": "Automated patient conversion system for healthcare clinics",
+                  "name": "AztechAcquisition Customer Conversion System",
+                  "description": "AI-powered customer conversion and business automation platform",
                   "brand": {
                     "@type": "Brand",
                     "name": "AztechAcquisition"
@@ -327,13 +338,13 @@ export default function RootLayout({
                     "@type": "Organization",
                     "name": "AztechAcquisition"
                   },
-                  "image": "https://aztechacquisition.com/hero-medical.png",
+                   "image": "https://aztechacquisition.com/hero-medical.png",
                   "offers": {
                     "@type": "Offer",
                     "price": "0",
                     "priceCurrency": "USD",
                     "availability": "https://schema.org/InStock",
-                    "description": "Free consultation and setup"
+                  "description": "Free appointment-booking chatbot setup"
                   },
                   "aggregateRating": {
                     "@type": "AggregateRating",
@@ -351,15 +362,16 @@ export default function RootLayout({
                 __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "SoftwareApplication",
-                  "name": "AztechAcquisition Patient Conversion System",
-                  "description": "Automated patient conversion system for healthcare clinics",
-                  "applicationCategory": "HealthcareApplication",
+                  "name": "AztechAcquisition Customer Conversion System",
+                  "description": "AI-powered customer conversion and business automation platform",
+                  "applicationCategory": "BusinessApplication",
                   "operatingSystem": "Web",
                   "offers": {
                     "@type": "Offer",
                     "price": "0",
                     "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://schema.org/InStock",
+                    "description": "Free appointment-booking chatbot setup"
                   },
                   "image": "https://aztechacquisition.com/hero-medical.png",
                   "screenshot": "https://aztechacquisition.com/hero-medical.png",
@@ -384,7 +396,7 @@ export default function RootLayout({
                   "@type": "Review",
                   "itemReviewed": {
                     "@type": "Product",
-                    "name": "AztechAcquisition Patient Conversion System"
+                     "name": "AztechAcquisition Customer Conversion System"
                   },
                   "reviewRating": {
                     "@type": "Rating",
@@ -393,9 +405,9 @@ export default function RootLayout({
                   },
                   "author": {
                     "@type": "Person",
-                    "name": "Dr. Sarah Johnson"
+                    "name": "Jordan Lee"
                   },
-                  "reviewBody": "AztechAcquisition transformed our dental practice. We now get 45% more consultations from social media and our no-show rate dropped from 25% to 8%. The automation handles 80% of our social inquiries automatically."
+                  "reviewBody": "AztechAcquisition transformed our business. We now get significantly more qualified leads from social media and our missed inquiries dropped. The automation handles 80% of our routine inquiries automatically."
                 })
               }}
             />
@@ -408,7 +420,7 @@ export default function RootLayout({
                   "@context": "https://schema.org",
                   "@type": "LocalBusiness",
                   "name": "AztechAcquisition",
-                  "description": "Automated patient conversion system for healthcare clinics",
+                  "description": "AI-powered customer conversion and business automation platform",
                   "url": "https://aztechacquisition.com",
                   "telephone": "+1-555-0123",
                   "email": "contact@aztechacquisition.com",
@@ -449,8 +461,8 @@ export default function RootLayout({
                 __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "Article",
-                  "headline": "How to Automate Your Clinic's Patient Conversion Process",
-                  "description": "Learn how AztechAcquisition's automated system can help healthcare practices increase consultations and reduce no-shows.",
+                  "headline": "How to Automate Your Customer Conversion Process",
+                  "description": "Learn how AztechAcquisition's automated system can help businesses increase conversions and reduce drop-offs.",
                   "image": "https://aztechacquisition.com/hero-medical.png",
                   "author": {
                     "@type": "Organization",
@@ -482,8 +494,8 @@ export default function RootLayout({
                 __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "VideoObject",
-                  "name": "AztechAcquisition Patient Conversion System Demo",
-                  "description": "See how our automated system works to increase patient consultations",
+                  "name": "AztechAcquisition Customer Conversion System Demo",
+                  "description": "See how our automated system works to increase customer conversions",
                   "thumbnailUrl": "https://aztechacquisition.com/hero-medical.png",
                   "uploadDate": "2024-01-01",
                   "duration": "PT3M",
@@ -505,8 +517,8 @@ export default function RootLayout({
                 __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "Event",
-                  "name": "Free Demo: AztechAcquisition Patient Conversion System",
-                  "description": "Book a free demo to see how our automated system can transform your clinic's growth",
+                  "name": "Free Demo: AztechAcquisition Customer Conversion System",
+                  "description": "Book a free demo to see how our automated system can transform your business growth",
                   "startDate": "2024-01-01T09:00:00",
                   "endDate": "2024-12-31T17:00:00",
                   "location": {
@@ -532,6 +544,28 @@ export default function RootLayout({
             <AptabaseProvider>
               {children}
             </AptabaseProvider>
+
+            {/* Site-wide Offer reinforcement for Free Chatbot Setup */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  '@context': 'https://schema.org',
+                  '@type': 'Offer',
+                  name: 'Free Appointment-Booking Chatbot Setup',
+                  description: 'Limited-time free setup of an appointment-booking chatbot by AztechAcquisition. No credit card required.',
+                  price: '0',
+                  priceCurrency: 'USD',
+                  availability: 'https://schema.org/InStock',
+                  url: 'https://aztechacquisition.com',
+                  eligibleRegion: 'US',
+                  seller: {
+                    '@type': 'Organization',
+                    name: 'AztechAcquisition'
+                  }
+                })
+              }}
+            />
           </body>
         </html>
       );

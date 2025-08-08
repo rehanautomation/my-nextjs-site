@@ -71,12 +71,35 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Prevent indexing of error pages
+      {
+        source: '/404',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
+      {
+        source: '/500',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
       {
         source: '/favicon.ico',
         headers: [
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noimageindex',
           },
         ],
       },
@@ -87,6 +110,10 @@ const nextConfig: NextConfig = {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
           },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
         ],
       },
       {
@@ -96,6 +123,10 @@ const nextConfig: NextConfig = {
             key: 'Cache-Control',
             value: 'public, max-age=86400',
           },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
         ],
       },
       {
@@ -104,6 +135,10 @@ const nextConfig: NextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=86400',
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
           },
         ],
       },

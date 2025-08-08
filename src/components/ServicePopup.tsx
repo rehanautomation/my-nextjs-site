@@ -52,13 +52,13 @@ export function ServicePopup({ isOpen, onClose, service }: ServicePopupProps) {
                   "name": "AztechAcquisition",
         "url": "https://aztechacquisition.com"
         },
-        "serviceType": "Healthcare Automation",
+        "serviceType": "Business Automation",
         "areaServed": "US",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD",
-          "description": "Free consultation and setup"
+          "description": "Free demo and setup"
         }
       };
 
@@ -173,9 +173,9 @@ export function ServicePopup({ isOpen, onClose, service }: ServicePopupProps) {
 
                 {/* Benefits */}
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
                     <FaChartLine className="text-primary" size={20} />
-                    Benefits for Your Clinic
+            Benefits for Your Business
                   </h3>
                   <ul className="space-y-2" role="list">
                     {service.detailedInfo?.benefits?.map((benefit, index) => (
@@ -185,9 +185,9 @@ export function ServicePopup({ isOpen, onClose, service }: ServicePopupProps) {
                       </li>
                     )) || [
                       "Reduce manual follow-up tasks by 80%",
-                      "Increase appointment show-up rates",
+                      "Increase meeting/show-up rates",
                       "Capture leads you might otherwise miss",
-                      "Improve patient satisfaction and retention"
+                      "Improve customer satisfaction and retention"
                     ].map((benefit, index) => (
                       <li key={index} className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
@@ -205,7 +205,7 @@ export function ServicePopup({ isOpen, onClose, service }: ServicePopupProps) {
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
                     {service.detailedInfo?.howItWorks || 
-                      "Our AI-powered system automatically engages with your prospects, qualifies leads, and schedules appointments without any manual intervention. The system learns from your clinic's specific needs and continuously optimizes for better results."}
+                      "Our AI-powered system automatically engages with your prospects, qualifies leads, and schedules calls or demos without any manual intervention. The system learns from your business's specific needs and continuously optimizes for better results."}
                   </p>
                 </div>
 
@@ -256,7 +256,7 @@ export function ServicePopup({ isOpen, onClose, service }: ServicePopupProps) {
                     <li>• <strong>Mobile-first design</strong> for optimal user experience</li>
                     <li>• <strong>Fast loading times</strong> that don&apos;t impact Core Web Vitals</li>
                     <li>• <strong>Accessibility compliant</strong> for all users</li>
-                    <li>• <strong>SEO-optimized content</strong> that helps your clinic rank better</li>
+                    <li>• <strong>SEO-optimized content</strong> that helps your business rank better</li>
                   </ul>
                 </div>
 

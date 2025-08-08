@@ -29,7 +29,7 @@ const services = [
   {
     title: "Social Media Comment & DM Agent",
     benefit: "+30% bookings",
-    desc: "Turn social engagement into booked consultations automatically.",
+    desc: "Turn social engagement into booked calls and purchases automatically.",
     icon: <FaComments size={32} className="text-primary" />,
     number: 1,
     detailedInfo: {
@@ -38,7 +38,7 @@ const services = [
         "🔸 Intelligent lead qualification and scoring",
         "🔸 Seamless integration with Facebook, Instagram, and LinkedIn",
         "🔸 Real-time notification system for urgent inquiries",
-        "🔸 Multi-language support for diverse patient base",
+        "🔸 Multi-language support for a diverse customer base",
         "🔸 Human-like responses that maintain your brand voice",
         "🔸 Automatic routing to your booking calendar"
       ],
@@ -49,19 +49,19 @@ const services = [
         "Increase social media engagement and brand awareness",
         "Track all inquiries and conversions automatically"
       ],
-      howItWorks: "Our AI agent monitors your social media accounts continuously, automatically responding to comments and direct messages with personalized, helpful information. It qualifies leads based on your criteria and seamlessly transfers qualified prospects to your booking system. The system turns casual social engagement into booked consultations by replying instantly with smart, human-like responses.",
-      caseStudy: "Dr. Sarah's dental practice saw a 45% increase in consultations from social media after implementing our DM agent. The system now handles 80% of their social inquiries automatically, converting casual comments into booked appointments."
+      howItWorks: "Our AI agent monitors your social media accounts continuously, automatically responding to comments and direct messages with personalized, helpful information. It qualifies leads based on your criteria and seamlessly transfers qualified prospects to your booking system. The system turns casual social engagement into booked calls and purchases by replying instantly with smart, human-like responses.",
+      caseStudy: "An e-commerce brand saw a 45% increase in qualified leads from social media after implementing our DM agent. The system now handles 80% of their social inquiries automatically, converting casual comments into booked calls and purchases."
     }
   },
   {
     title: "Lead Nurture Automation",
     benefit: "+40% show-up rate",
-    desc: "Automated follow-ups to ensure more leads show up for their appointments.",
+    desc: "Automated follow-ups to ensure more leads convert and show up for meetings.",
     icon: <FaRobot size={32} className="text-primary" />,
     number: 2,
     detailedInfo: {
       features: [
-        "🔸 Personalized follow-up sequences based on patient type",
+        "🔸 Personalized follow-up sequences based on lead/customer type",
         "🔸 Multi-channel communication (SMS, email, phone)",
         "🔸 Smart timing optimization for maximum engagement",
         "🔸 Appointment reminder and confirmation system",
@@ -72,50 +72,50 @@ const services = [
       benefits: [
         "Dramatically reduce no-show rates",
         "Free up staff time from manual follow-ups",
-        "Improve patient experience and satisfaction",
-        "Increase overall clinic efficiency",
+        "Improve customer experience and satisfaction",
+        "Increase overall business efficiency",
         "Never let a lead go cold with automated nurturing"
       ],
-      howItWorks: "Our system creates personalized nurture sequences for each lead type. It sends timely reminders, confirms appointments, and follows up with no-shows automatically. The AI learns from your clinic's patterns to optimize timing and messaging. This system sends automated, personalized SMS and email follow-ups to ensure every inquiry is guided toward booking.",
-      caseStudy: "A cosmetic clinic reduced their no-show rate from 25% to 8% within 30 days of implementing our nurture automation, while increasing their overall booking conversion rate by 40%."
+      howItWorks: "Our system creates personalized nurture sequences for each lead type. It sends timely reminders, confirms meetings, and follows up with no-shows automatically. The AI learns from your business's patterns to optimize timing and messaging. This system sends automated, personalized SMS and email follow-ups to ensure every inquiry is guided toward conversion.",
+      caseStudy: "A professional services firm reduced their no-show rate from 25% to 8% within 30 days of implementing our nurture automation, while increasing their overall conversion rate by 40%."
     }
   },
   {
-    title: "Post-Treatment Follow-Ups & Upsells",
+    title: "Post-Purchase Follow-Ups & Upsells",
     benefit: "+25–35% repeat bookings",
-    desc: "Increase patient retention and upsell with timely, automated follow-ups.",
+    desc: "Increase customer retention and upsell with timely, automated follow-ups.",
     icon: <FaRedo size={32} className="text-primary" />,
     number: 3,
     detailedInfo: {
       features: [
-        "🔸 Automated post-treatment check-ins",
-        "🔸 Personalized recovery guidance and tips",
-        "🔸 Smart upsell recommendations based on treatment history",
+        "🔸 Automated post-purchase check-ins",
+        "🔸 Personalized onboarding guidance and tips",
+        "🔸 Smart upsell recommendations based on purchase history",
         "🔸 Satisfaction survey and feedback collection",
-        "🔸 Re-booking prompts for follow-up appointments",
-        "🔸 Share care instructions automatically",
-        "🔸 Suggest additional services based on past treatments"
+        "🔸 Re-booking prompts for follow-up meetings or services",
+        "🔸 Share product/service usage tips automatically",
+        "🔸 Suggest additional services based on past purchases"
       ],
       benefits: [
-        "Increase patient retention and loyalty",
+        "Increase customer retention and loyalty",
         "Generate additional revenue through smart upsells",
-        "Improve patient outcomes and satisfaction",
-        "Build stronger patient relationships",
+        "Improve customer satisfaction",
+        "Build stronger customer relationships",
         "Positive reviews routed to Google automatically"
       ],
-      howItWorks: "After each treatment, our system automatically sends personalized follow-up messages with recovery tips, satisfaction surveys, and relevant upsell opportunities. It tracks patient responses and schedules follow-up appointments when appropriate. The system automatically checks in with clients after treatments, sharing care instructions and suggesting additional services based on past treatments.",
-      caseStudy: "A dermatology practice increased their average patient lifetime value by 35% through automated post-treatment follow-ups and strategic upsells, while improving their Google review ratings by 2.3 stars."
+      howItWorks: "After each purchase, our system automatically sends personalized follow-up messages with onboarding tips, satisfaction surveys, and relevant upsell opportunities. It tracks responses and schedules follow-up calls or demos when appropriate. The system automatically checks in with customers after purchases, sharing how-to guidance and suggesting additional services based on past activity.",
+      caseStudy: "A SaaS company increased their average customer lifetime value by 35% through automated post-purchase follow-ups and strategic upsells, while improving their public review ratings significantly."
     }
   },
   {
     title: "Database Reactivation Campaigns",
     benefit: "10–20% recovered leads",
-    desc: "Re-engage old leads and bring them back to your clinic.",
+    desc: "Re-engage old leads and bring them back to your business.",
     icon: <AiOutlineThunderbolt size={32} className="text-primary" />,
     number: 4,
     detailedInfo: {
       features: [
-        "🔸 Intelligent segmentation of inactive patients",
+        "🔸 Intelligent segmentation of inactive customers/leads",
         "🔸 Multi-channel reactivation campaigns",
         "🔸 Personalized re-engagement messaging",
         "🔸 Special offer and incentive management",
@@ -124,20 +124,20 @@ const services = [
         "🔸 Every reply handled by automation"
       ],
       benefits: [
-        "Recover lost revenue from inactive patients",
-        "Re-establish relationships with past patients",
-        "Generate new business from existing database",
-        "Improve overall clinic profitability",
+        "Recover lost revenue from inactive customers",
+        "Re-establish relationships with past customers",
+        "Generate new business from your existing database",
+        "Improve overall business profitability",
         "Your old leads are worth gold - reactivate them"
       ],
-      howItWorks: "Our system analyzes your patient database to identify inactive patients and creates personalized reactivation campaigns. It sends targeted messages with special offers and incentives to bring them back to your clinic. This campaign reactivates them with time-limited offers and personalized messages through SMS and email, with every reply handled by automation and linked to your calendar.",
-      caseStudy: "A dental practice recovered 15% of their inactive patients within 60 days, generating $45,000 in additional revenue from what they thought were 'dead' leads."
+      howItWorks: "Our system analyzes your CRM/database to identify inactive leads and creates personalized reactivation campaigns. It sends targeted messages with special offers and incentives to bring them back to your business. This campaign reactivates them with time-limited offers and personalized messages through SMS and email, with every reply handled by automation and linked to your calendar.",
+      caseStudy: "A local services business recovered 15% of their inactive customers within 60 days, generating significant additional revenue from what they thought were 'dead' leads."
     }
   },
   {
     title: "Website Booking Chatbot",
     benefit: "24/7 capture + no-show reduction",
-    desc: "Never miss a lead with our always-on booking chatbot.",
+    desc: "Never miss a lead with our always-on booking and lead-capture chatbot.",
     icon: <FaRobot size={32} className="text-primary" />,
     number: 5,
     detailedInfo: {
@@ -155,22 +155,22 @@ const services = [
         "Reduce phone call volume and staff workload",
         "Provide instant answers to common questions",
         "Improve website conversion rates",
-        "Convert every visitor into a consultation"
+        "Convert every visitor into a customer"
       ],
-      howItWorks: "Our AI chatbot engages visitors on your website 24/7, answering questions, qualifying leads, and booking appointments automatically. It integrates seamlessly with your existing booking system and provides a smooth user experience. This always-on chatbot greets website visitors, answers questions, and books appointments straight into your calendar without hiring extra staff.",
-      caseStudy: "A medical clinic increased their online bookings by 60% and reduced phone call volume by 40% after implementing our website chatbot, while reducing no-shows by 35% through automated reminders."
+      howItWorks: "Our AI chatbot engages visitors on your website 24/7, answering questions, qualifying leads, and booking calls or demos automatically. It integrates seamlessly with your existing booking system and provides a smooth user experience. This always-on chatbot greets website visitors, answers questions, and books meetings straight into your calendar without hiring extra staff.",
+      caseStudy: "A professional services business increased their online bookings by 60% and reduced phone call volume by 40% after implementing our website chatbot."
     }
   },
   {
     title: "24/7 AI Calling Agent",
     benefit: "+20–40% more bookings from calls",
-    desc: "Convert more phone inquiries into booked appointments automatically.",
+    desc: "Convert more phone inquiries into booked calls and sales automatically.",
     icon: <FaPhoneAlt size={32} className="text-primary" />,
     number: 6,
     detailedInfo: {
       features: [
         "🔸 Natural language processing for human-like conversations",
-        "🔸 Automatic appointment scheduling and confirmation",
+        "🔸 Automatic call scheduling and confirmation",
         "🔸 Call recording and analytics for optimization",
         "🔸 Integration with your phone system",
         "🔸 Fallback to human agents when needed",
@@ -184,30 +184,30 @@ const services = [
         "Provide consistent service quality",
         "Professional phone presence 24/7"
       ],
-      howItWorks: "Our AI calling agent answers your phone 24/7, engaging callers in natural conversations, qualifying leads, and booking appointments. It can handle complex inquiries and seamlessly transfer to human agents when necessary. This voice AI answers 100% of incoming phone inquiries, 24/7, and books consultations directly, giving you a professional phone presence that runs round the clock.",
-      caseStudy: "A dental practice increased their phone booking conversion rate from 15% to 35% while reducing call handling costs by 70% and never missing a single call opportunity."
+      howItWorks: "Our AI calling agent answers your phone 24/7, engaging callers in natural conversations, qualifying leads, and booking calls. It can handle complex inquiries and seamlessly transfer to human agents when necessary. This voice AI answers 100% of incoming phone inquiries, 24/7, and books meetings directly, giving you a professional phone presence that runs round the clock.",
+      caseStudy: "A nationwide retailer increased their phone conversion rate from 15% to 35% while reducing call handling costs by 70% and never missing a single opportunity."
     }
   },
 ];
 
 const testimonials = [
   {
-    name: "Dr. Jane Smith",
-    role: "Dermatologist",
-            image: "/avatar1.webp",
-    text: "We've seen a 40% increase in bookings and our staff saves hours every week!",
+    name: "Alex Morgan",
+    role: "E-commerce Founder",
+    image: "/avatar1.webp",
+    text: "We saw a 40% increase in qualified leads and our team saves hours every week!",
   },
   {
-    name: "Dr. Alex Lee",
-    role: "Cosmetic Dentist",
-            image: "/avatar2.webp",
-    text: "AztechAcquisition is a game changer for our clinic's growth.",
+    name: "Priya Patel",
+    role: "SaaS Growth Lead",
+    image: "/avatar2.webp",
+    text: "AztechAcquisition is a game changer for our pipeline and conversions.",
   },
   {
-    name: "Dr. Maria Gomez",
-    role: "Aesthetic Physician",
-            image: "/avatar3.webp",
-    text: "Our follow-up rates and patient satisfaction have never been higher!",
+    name: "Marcus Rivera",
+    role: "Local Services Owner",
+    image: "/avatar3.webp",
+    text: "Our follow-up and customer satisfaction have never been higher!",
   },
 ];
 
@@ -242,7 +242,7 @@ export default function Home() {
   ], []);
 
   // Typewriter effect for hero heading
-  const fullHeading = "Automate Your Clinic&apos;s Growth: More Consultations, More Patients, More Time Saved.";
+  const fullHeading = "Automate Your Business Growth: More Leads, More Customers, More Time Saved.";
   const [typedHeading, setTypedHeading] = useState("");
   useEffect(() => {
     setTypedHeading("");
@@ -454,7 +454,7 @@ export default function Home() {
             onClick={() => analytics.trackCTAClick('book_appointment', 'desktop_nav')}
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-              Book Appointment <FiArrowUpRight className="inline" size={18} />
+              Book a Call <FiArrowUpRight className="inline" size={18} />
             </a>
           </Button>
         </div>
@@ -532,10 +532,10 @@ export default function Home() {
                     asChild 
                     size="lg" 
                     className="w-full"
-                    onClick={() => analytics.trackCTAClick('book_appointment', 'mobile_nav')}
+                    onClick={() => analytics.trackCTAClick('book_call', 'mobile_nav')}
                   >
                     <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                      Book Appointment <FiArrowUpRight className="inline" size={18} />
+                      Book a Call <FiArrowUpRight className="inline" size={18} />
                     </a>
                   </Button>
                 </div>
@@ -545,8 +545,8 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      {/* Breadcrumb Navigation */}
-      <nav className="px-4 sm:px-6 py-2 bg-gray-50" aria-label="Breadcrumb">
+      {/* Breadcrumb Navigation (hidden on small screens to avoid crowding hero) */}
+      <nav className="hidden sm:block px-4 sm:px-6 py-2 bg-gray-50" aria-label="Breadcrumb">
         <ol className="flex items-center space-x-2 text-sm text-gray-600">
           <li>
             <Link href="/" className="hover:text-primary transition-colors">
@@ -555,14 +555,14 @@ export default function Home() {
           </li>
           <li className="flex items-center">
             <span className="mx-2">/</span>
-            <span className="text-gray-900">Patient Conversion System</span>
+            <span className="text-gray-900">Customer Conversion System</span>
           </li>
         </ol>
       </nav>
 
       {/* Mobile-Optimized Hero Section */}
       <section
-        className="relative min-h-[85vh] sm:min-h-[80vh] md:min-h-[70vh] py-8 sm:py-4 px-4 sm:px-6 overflow-hidden flex items-stretch"
+        className="relative min-h-[75vh] sm:min-h-[80vh] md:min-h-[70vh] pt-4 sm:pt-6 pb-8 px-4 sm:px-6 overflow-hidden flex items-stretch"
         id="home"
         aria-labelledby="hero-heading"
       >
@@ -609,7 +609,7 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.7 }}
               className="relative z-10 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 text-text text-left"
             >
-              Get 20–50 extra consultations every month with AztechAcquisition, fully automated 24/7.
+              Get 20–50 extra qualified leads every month with AztechAcquisition, fully automated 24/7.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -634,11 +634,11 @@ export default function Home() {
           </div>
           
           {/* Hero Image - adjusted positioning and sizing */}
-          <div className="flex items-center justify-center h-full w-full order-1 lg:order-2 mb-6 lg:mb-0 relative z-10">
+          <div className="flex items-center justify-center h-full w-full order-1 lg:order-2 mb-4 sm:mb-6 lg:mb-0 relative z-10">
             <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <Image
                 src="/hero-medical.png"
-                alt="Medical professionals using AztechAcquisition's automated patient conversion system"
+                alt="Business team using AztechAcquisition's automated customer conversion system"
                 width={1550}
                 height={1550}
                 className="object-contain drop-shadow-2xl w-full h-auto"
@@ -654,6 +654,7 @@ export default function Home() {
       <section 
         className="max-w-2xl mx-auto py-12 sm:py-16 px-4 text-center"
         aria-labelledby="lead-magnet-heading"
+        aria-describedby="lead-magnet-offer"
       >
         <Card className="p-4 sm:p-6">
           <CardHeader className="pb-4">
@@ -668,16 +669,17 @@ export default function Home() {
             </div>
           </CardHeader>
           <CardContent className="space-y-4">
-            <Alert className="mb-4">
+            <Alert className="mb-4" aria-live="polite">
               <AlertTitle>Limited time offer!</AlertTitle>
               <AlertDescription>
-                Book now and get your chatbot setup <b>100% free</b>.
+                <span id="lead-magnet-offer">Book now and get your chatbot setup <b>100% free</b>. No credit card required.</span>
               </AlertDescription>
             </Alert>
-            <ul className="text-base sm:text-lg mb-6 sm:mb-8 space-y-2 text-left max-w-md mx-auto">
-              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" /> Automates bookings & reminders</li>
-              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" /> Installs in under 48 hours</li>
-              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" /> 100% free to set up — book a call</li>
+            <ul className="text-base sm:text-lg mb-6 sm:mb-8 space-y-2 text-left max-w-md mx-auto" aria-label="Free chatbot setup benefits">
+              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> Automates bookings & reminders</li>
+              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> Installs in under 48 hours</li>
+              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> 100% free to set up — book a call</li>
+              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> No credit card required</li>
             </ul>
             <Button 
               asChild 
@@ -685,12 +687,34 @@ export default function Home() {
               className="w-full"
               onClick={() => analytics.trackCTAClick('claim_chatbot', 'lead_magnet')}
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" aria-label="Claim your free chatbot setup">
                 <FaRobot className="inline mr-2 mb-1" size={20} /> Claim Your Free Chatbot Setup
               </a>
             </Button>
           </CardContent>
         </Card>
+
+        {/* Structured Data - Offer for Free Chatbot Setup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Offer',
+              name: 'Free Appointment-Booking Chatbot Setup',
+              description: 'Limited-time free setup of an appointment-booking chatbot by AztechAcquisition. No credit card required.',
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+              url: BOOKING_URL,
+              eligibleRegion: 'US',
+              seller: {
+                '@type': 'Organization',
+                name: 'AztechAcquisition'
+              }
+            })
+          }}
+        />
       </section>
 
       {/* Mobile-Optimized Core Services Section */}
@@ -714,7 +738,7 @@ export default function Home() {
             role="heading"
             aria-level={2}
           >
-            Turn Clicks into Consultations. Convert Consultations into Paying Patients.
+            Turn Clicks into Customers. Convert Customers into Repeat Revenue.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -723,7 +747,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="text-base sm:text-lg text-center mb-8 sm:mb-12 max-w-2xl mx-auto"
           >
-            We deliver booked consultations and loyal returning patients with AztechAcquisition&apos;s fully automated system.
+            We deliver booked calls and loyal returning customers with AztechAcquisition's fully automated system.
           </motion.p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8" role="list" aria-label="Services">
             {services.map((service) => (
@@ -877,7 +901,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-text"
           >
-            We guarantee at least 20–50 new consultations per month—or we work for free until you get them.
+            We guarantee at least 20–50 new qualified leads or booked meetings per month—or we work for free until you get them.
           </motion.p>
           <AlertDialog>
             <AlertDialogTrigger asChild>
@@ -887,7 +911,7 @@ export default function Home() {
               <AlertDialogHeader>
                 <AlertDialogTitle>Guarantee Terms</AlertDialogTitle>
                 <AlertDialogDescription>
-                  If you do not receive at least 20–50 new consultations per month, we will work for free until you do. Contact us for full details.
+                  If you do not receive at least 20–50 new qualified leads or booked meetings per month, we will work for free until you do. Contact us for full details.
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
@@ -916,7 +940,7 @@ export default function Home() {
             role="heading"
             aria-level={2}
           >
-            Ready to Get More Consultations—Automatically?
+            Ready to Get More Customers—Automatically?
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -925,7 +949,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="text-base sm:text-lg mb-6 sm:mb-8 text-text"
           >
-            Book a free call to see exactly how our system can work for your clinic.
+            Book a free call to see exactly how our system can work for your business.
           </motion.p>
           <MotionButton
             asChild
