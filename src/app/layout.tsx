@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "AztechAcquisition - Free Appointment-Booking Chatbot Setup | Customer Conversion System",
     template: "%s | AztechAcquisition"
   },
-  description: "Claim a free appointment-booking chatbot setup (no credit card required). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system.",
+  description: "Claim a free appointment-booking chatbot setup (). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system.",
   keywords: [
     "customer conversion system",
     "business automation",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "AztechAcquisition - Free Appointment-Booking Chatbot Setup",
-    description: "Claim a free appointment-booking chatbot setup. No credit card required.",
+    description: "Claim a free appointment-booking chatbot setup. .",
     images: ['/hero-medical.png'],
     creator: '@aztechacquisition',
     site: '@aztechacquisition',
@@ -107,7 +107,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />
-        <meta name="description" content="Claim a free appointment-booking chatbot setup (no credit card required). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system." />
+        <meta name="description" content="Claim a free appointment-booking chatbot setup (). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system." />
          <meta name="keywords" content="customer conversion system, business automation, lead generation automation, appointment booking automation, lead nurturing, marketing automation, sales enablement, customer retention system, growth automation, free chatbot setup, appointment booking chatbot, website chatbot, ai chatbot for business" />
         <meta name="author" content="AztechAcquisition" />
         <meta name="robots" content="index, follow" />
@@ -553,7 +553,7 @@ export default function RootLayout({
                   '@context': 'https://schema.org',
                   '@type': 'Offer',
                   name: 'Free Appointment-Booking Chatbot Setup',
-                  description: 'Limited-time free setup of an appointment-booking chatbot by AztechAcquisition. No credit card required.',
+                  description: 'Limited-time free setup of an appointment-booking chatbot by AztechAcquisition. .',
                   price: '0',
                   priceCurrency: 'USD',
                   availability: 'https://schema.org/InStock',

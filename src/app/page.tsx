@@ -672,14 +672,14 @@ export default function Home() {
             <Alert className="mb-4" aria-live="polite">
               <AlertTitle>Limited time offer!</AlertTitle>
               <AlertDescription>
-                <span id="lead-magnet-offer">Book now and get your chatbot setup <b>100% free</b>. No credit card required.</span>
+                <span id="lead-magnet-offer">Book now and get your chatbot setup <b>100% free</b>. .</span>
               </AlertDescription>
             </Alert>
             <ul className="text-base sm:text-lg mb-6 sm:mb-8 space-y-2 text-left max-w-md mx-auto" aria-label="Free chatbot setup benefits">
               <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> Automates bookings & reminders</li>
               <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> Installs in under 48 hours</li>
               <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> 100% free to set up — book a call</li>
-              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> No credit card required</li>
+              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> </li>
             </ul>
             <Button 
               asChild 
@@ -702,7 +702,7 @@ export default function Home() {
               '@context': 'https://schema.org',
               '@type': 'Offer',
               name: 'Free Appointment-Booking Chatbot Setup',
-              description: 'Limited-time free setup of an appointment-booking chatbot by AztechAcquisition. No credit card required.',
+              description: 'Limited-time free setup of an appointment-booking chatbot by AztechAcquisition. .',
               price: '0',
               priceCurrency: 'USD',
               availability: 'https://schema.org/InStock',

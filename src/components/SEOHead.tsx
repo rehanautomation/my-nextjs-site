@@ -14,7 +14,7 @@ interface SEOHeadProps {
 
 export function SEOHead({
   title = "AztechAcquisition - Free Appointment-Booking Chatbot Setup | Customer Conversion System",
-  description = "Claim a free appointment-booking chatbot setup (no credit card required). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system.",
+  description = "Claim a free appointment-booking chatbot setup (). Get 20–50 extra qualified leads monthly with AztechAcquisition's AI-powered customer conversion system.",
   keywords = [
     "customer conversion system",
     "business automation", 
