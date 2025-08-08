@@ -679,7 +679,6 @@ export default function Home() {
               <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> Automates bookings & reminders</li>
               <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> Installs in under 48 hours</li>
               <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> 100% free to set up — book a call</li>
-              <li className="flex items-center gap-2"><FaCheckCircle className="text-teal-500 flex-shrink-0" aria-hidden /> </li>
             </ul>
             <Button 
               asChild 
